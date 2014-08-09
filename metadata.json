@@ -1,0 +1,16 @@
+{
+  "name": "jaredhatfield-sendmailses",
+  "version": "0.0.1",
+  "author": "Jared Hatfield",
+  "license": "Licensed under (Apache 2.0)",
+  "summary": "Configures sendmail to use SES on Amazon Linux",
+  "source": "https://github.com/JaredHatfield/puppet-sendmailses",
+  "project_page": "(https://forge.puppetlabs.com/jaredhatfield/sendmailses)",
+  "issues_url": "https://github.com/JaredHatfield/puppet-sendmailses/issues",
+  "tags": ["sendmail", "ses"],
+  "operatingsystem_support": [
+    {
+    "operatingsystem":"Amazon"
+    }
+   ]
+}
