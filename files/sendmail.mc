@@ -22,7 +22,7 @@ dnl define(`confLOG_LEVEL', `9')dnl
 dnl #
 dnl # Uncomment and edit the following line if your outgoing mail needs to
 dnl # be sent out through an external mail server:
-dnl # 
+dnl #
 dnl define(`SMART_HOST', `smtp.your.provider')dnl
 define(`SMART_HOST', `email-smtp.us-east-1.amazonaws.com')dnl
 define(`RELAY_MAILER_ARGS', `TCP $h 25')dnl
@@ -46,12 +46,12 @@ dnl # The following allows relaying if the user authenticates, and disallows
 dnl # plaintext authentication (PLAIN/LOGIN) on non-TLS links
 dnl #
 dnl define(`confAUTH_OPTIONS', `A p')dnl
-dnl # 
+dnl #
 dnl # PLAIN is the preferred plaintext authentication method and used by
 dnl # Mozilla Mail and Evolution, though Outlook Express and other MUAs do
 dnl # use LOGIN. Other mechanisms should be used if the connection is not
 dnl # guaranteed secure.
-dnl # Please remember that saslauthd needs to be running for AUTH. 
+dnl # Please remember that saslauthd needs to be running for AUTH.
 dnl #
 dnl TRUST_AUTH_MECH(`EXTERNAL DIGEST-MD5 CRAM-MD5 LOGIN PLAIN')dnl
 dnl define(`confAUTH_MECHANISMS', `EXTERNAL GSSAPI DIGEST-MD5 CRAM-MD5 LOGIN PLAIN')dnl
@@ -86,15 +86,15 @@ FEATURE(always_add_domain)dnl
 FEATURE(use_cw_file)dnl
 FEATURE(use_ct_file)dnl
 dnl #
-dnl # The following limits the number of processes sendmail can fork to accept 
-dnl # incoming messages or process its message queues to 20.) sendmail refuses 
+dnl # The following limits the number of processes sendmail can fork to accept
+dnl # incoming messages or process its message queues to 20.) sendmail refuses
 dnl # to accept connections once it has reached its quota of child processes.
 dnl #
 dnl define(`confMAX_DAEMON_CHILDREN', `20')dnl
 dnl #
-dnl # Limits the number of new connections per second. This caps the overhead 
-dnl # incurred due to forking new sendmail processes. May be useful against 
-dnl # DoS attacks or barrages of spam. (As mentioned below, a per-IP address 
+dnl # Limits the number of new connections per second. This caps the overhead
+dnl # incurred due to forking new sendmail processes. May be useful against
+dnl # DoS attacks or barrages of spam. (As mentioned below, a per-IP address
 dnl # limit would be useful but is not available as an option at this writing.)
 dnl #
 dnl define(`confCONNECTION_RATE_THROTTLE', `3')dnl
@@ -153,9 +153,9 @@ dnl #
 FEATURE(`accept_unresolvable_domains')dnl
 dnl #
 dnl FEATURE(`relay_based_on_MX')dnl
-dnl # 
+dnl #
 dnl # Also accept email sent to "localhost.localdomain" as local email.
-dnl # 
+dnl #
 LOCAL_DOMAIN(`localhost.localdomain')dnl
 dnl #
 dnl # The following example makes mail from this host and any additional
