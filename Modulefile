@@ -1,6 +1,7 @@
 name    'jaredhatfield-sendmailses'
 version '0.0.3'
 source 'https://github.com/JaredHatfield/puppet-sendmailses'
+issues_url 'https://github.com/JaredHatfield/puppet-sendmailses/issues'
 author 'jaredhatfield'
 license 'Apache-2.0'
 summary 'Configures sendmail to use SES on Amazon Linux'
